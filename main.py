@@ -65,7 +65,7 @@ def search():
             value = data[website.title()]
             messagebox.showinfo(title=website.title(
             ), message=f"Email: {value['Email']}\nPassword: {value['Password']}")
-    except FileNotFoundError:
+    except:
         messagebox.showinfo(
             title="Oops", message="Looks like the website searched cannot be found")
 # ---------------------------- UI SETUP ------------------------------- #
